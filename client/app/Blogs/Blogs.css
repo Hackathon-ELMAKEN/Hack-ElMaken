@@ -1,0 +1,257 @@
+.blogs-container {
+  background-color: #f5deb387;
+  overflow: hidden;
+}
+.blogs-container h1 {
+  margin-bottom: 2%;
+}
+.image-blogs-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-blogs-container img {
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 40%;
+  transform: translate(0, -50%);
+  color: white;
+  font-size: 8vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+.blog-card-cotainer {
+  width: 70%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 2%;
+  /* height: 50vh; */
+}
+
+.blog-image {
+  width: 60%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.blog {
+  padding: 20px;
+}
+.user-details {
+  display: flex;
+  align-items: center;
+ 
+}
+
+
+
+
+
+
+
+
+
+.blog-date {
+  margin-bottom: 1.2rem;
+  color: #9d9797;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.content {
+  border-bottom: 2px solid #d9d5d5;
+  padding-bottom: 0.9%;
+}
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show before truncation */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.user-details img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.details{
+  margin-left: 0.2vw;
+  line-height: 1.4;
+ 
+}
+.details p {
+  color: #4b4949;
+}
+
+.comments {
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+.likes {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.interaction {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+.interaction p,
+.interaction div {
+  color: gray;
+}
+.dropdown {
+  margin-left: 14%;
+  background: #7b1fa2;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  transform: perspective(1000px);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  margin-bottom: 2%;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  text-align: center;
+  top: 0;
+  visibility: hidden;
+  z-index: -99999;
+}
+.dropdown-menu li {
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.dropdown-menu li:first-child {
+  cursor: default;
+}
+
+.dropdown-menu li:hover {
+  background: #ba68c8;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+  background: #7b1fa2;
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+  width: 100%;
+  -webkit-transition: all 0.5s, background, 2s 0.5s linear;
+  transition: all 0.5s, background 2s 0.5s linear;
+}
+.main {
+  padding: 5%;
+}
+.posts {
+  text-align: center;
+  font-size: 4vw;
+  margin-bottom: 4%;
+  color: #ff007b;
+}
+.liked {
+color: red;
+}
+.jaime:hover {
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: ease-in-out 0.4s;
+  color: red;
+}
+@media (max-width: 768px) {
+  .blog-card-cotainer {
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 5%;
+  }
+
+  .blog-image {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .blog {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+  }
+
+  .dropdown {
+    margin-left: 5%;
+    width: 150px;
+  }
+  .dropdown-menu {
+    opacity: 1;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .dropdown-menu li {
+    width: 100%;
+  }
+  .dropdown:hover .dropdown-menu {
+    transition: all 0.3s, background 0.3s linear;
+  }
+  .interaction{
+    padding-bottom: 3%;
+  }
+}
+@media (max-width: 1200px) {
+  .blog-card-cotainer {
+    width: 100%;
+  }
+}
+@media (min-width:1200px){
+  .blog-card-cotainer {
+    width: 80%;
+    max-width: 100%;
+
+    height: 48vh;
+  }
+  .blogs-container h1 {
+    margin-bottom: 2%;
+  }
+  .user-details {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+  }
+  .image-blogs-container img {
+    width: 100%;
+    height: 100vh;
+}
+  
+}

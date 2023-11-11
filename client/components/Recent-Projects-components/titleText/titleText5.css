@@ -1,0 +1,55 @@
+.text5-h1 {
+    color: #ffffff;
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#text5-success::before {
+    content: "";
+    animation: animate infinite 5s;
+    padding-left: 10px;
+
+}
+
+@keyframes animate {
+
+    0% {
+        content: "TURN";
+    }
+
+    25% {
+        content: "TURN YOUR";
+    }
+
+    50% {
+        content: "TURN YOUR IDEAS ";
+    }
+
+    75% {
+        content: "TURN YOUR IDEAS INTO ";
+    }
+
+    100% {
+        content: "TURN YOUR IDEAS INTO SUCCESS";
+    }
+
+
+}
+
+.hidden8 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+
+.show8 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
